@@ -8,13 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display';
 }
 a {
     text-decoration: none;
-}
-ul, ol {
-    list-style: none;
 }
 
 /* ROOT VARIABLES */
@@ -28,12 +24,92 @@ ul, ol {
 }
 
 /* GLOBAL STYLES (Mobile First Design) */
+body {
+    /* delete the next line when working on media queries */
+    max-width: 600px;
+
+    font-family: 'Playfair Display';
+    color: var(--midnight-blue);
+    background-color: var(--soft-white);
+    font-size: larger;
+}
+header, footer {
+    color: var(--soft-white);
+    background-color: var(--midnight-blue);
+    text-align: center;
+    padding: 1.5em;
+}
+header p {
+    padding-top: 1em;
+    font-size: 1.2em;
+    font-style: italic;
+}
+header img {
+    width: 40%;
+}
+nav {
+    background-color: var(--champagne-gold);
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5em;
+    font-size: 1.5em;
+}
+nav a {
+    font-weight: bold;
+    color: var(--midnight-blue);
+}
+main {
+    padding: 1em;
+}
+main section {
+    padding: 1em 0 1em;
+    border-bottom: 1px solid var(--champagne-gold);
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+h3 {
+    font-size: 1.5em;
+}
+#offerings div, #gallery a {
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    display: block;
+    padding: 1em;
+    border-radius: 5px;
+}
+#offerings div {
+    margin: 1em 0 0;
+    box-shadow: 2px 2px 5px var(--dark-charcoal);
+}
+#offerings div > ul {
+    margin-left: 1em;
+}
+#offerings p {
+    margin-top: .1em;
+}
+#gallery a {
+    text-align: center;
+    font-weight: bold;
+}
 
 
 /* MEDIA QUERY (Medium) */
+@media screen and (min-width: 600px) {
 
+}
 
 /* MEDIA QUERY (Large) */
+@media screen and (min-width: 900px) {
 
+}
 
 /* MEDIA QUERY (XL) */
+@media screen and (min-width: 1200px) {
+
+}
