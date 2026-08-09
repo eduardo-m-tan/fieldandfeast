@@ -31,7 +31,8 @@ body {
     font-family: 'Playfair Display';
     color: var(--midnight-blue);
     background-color: var(--soft-white);
-    font-size: larger;
+    font-size: 1.1em;
+    font-weight: 550;
 }
 header, footer {
     color: var(--soft-white);
@@ -39,42 +40,42 @@ header, footer {
     text-align: center;
     padding: 1.5em;
 }
-header p {
-    padding-top: 1em;
-    font-size: 1.2em;
-    font-style: italic;
-}
 header img {
     width: 40%;
+}
+h1 {
+    font-size: 4em;
+}
+header p {
+    padding-top: .5em;
+    font-size: 1.2em;
+    font-style: italic;
 }
 nav {
     background-color: var(--champagne-gold);
     display: flex;
     justify-content: space-evenly;
     padding: .5em;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 nav a {
     font-weight: bold;
     color: var(--midnight-blue);
 }
 main {
-    padding: 1em;
+    padding: 1.5em;
 }
 main section {
     padding: 1em 0 1em;
-    border-bottom: 1px solid var(--champagne-gold);
-}
-h1 {
-    font-size: 3em;
+    border-bottom: 3px solid var(--champagne-gold);
 }
 h2 {
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 #offerings div, #gallery a {
     background-color: var(--olive-green);
@@ -83,18 +84,36 @@ h3 {
     padding: 1em;
     border-radius: 5px;
 }
-#offerings div {
-    margin: 1em 0 0;
+#offerings div, #gallery div {
+    margin: 1em 0;
     box-shadow: 2px 2px 5px var(--dark-charcoal);
 }
-#offerings div > ul {
+#offerings div ul {
     margin-left: 1em;
 }
 #offerings p {
-    margin-top: .1em;
+    margin-top: .2em;
+}
+#gallery div {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    border-radius: 5px;
+}
+#gallery > div > p {
+    padding: 0.5em 0;
+}
+#gallery > div > img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
 }
 #gallery a {
     text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    color: var(--champagne-gold);
     font-weight: bold;
 }
 
