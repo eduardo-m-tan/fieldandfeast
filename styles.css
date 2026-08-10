@@ -125,6 +125,9 @@ footer a {
     main {
         padding: 1.5em 2em;
     }
+    header img {
+        width: 225px;
+    }
     nav a:hover {
         color: var(--olive-green);
     }
@@ -159,9 +162,6 @@ footer a {
     main {
         padding: 2em 3em;
     }
-    header img {
-        width: 25%;
-    }
     #offerings, #galleryImages {
         gap: 1.5em;
     }
@@ -177,7 +177,7 @@ footer a {
         padding: 2em 10em;
     }
     header img {
-        width: 20%;
+        width: 250px;
     }
     #galleryImages {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
