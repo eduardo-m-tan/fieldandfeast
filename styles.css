@@ -59,6 +59,9 @@ nav a {
     font-weight: 900;
     color: var(--midnight-blue);
 }
+nav a:hover {
+    color: var(--olive-green);
+}
 main {
     padding: 1.5em;
 }
@@ -115,9 +118,15 @@ h3 {
     text-align: center;
     font-weight: bold;
 }
+#gallery a:hover {
+    background-color: var(--midnight-blue);
+}
 footer a {
     color: var(--champagne-gold);
     font-weight: bold;
+}
+footer a:hover {
+    color: var(--olive-green);
 }
 
 
@@ -128,9 +137,6 @@ footer a {
     }
     header img {
         width: 225px;
-    }
-    nav a:hover {
-        color: var(--olive-green);
     }
     h3 {
         font-size: 1.6em;
@@ -149,12 +155,6 @@ footer a {
     }
     #galleryImages {
         font-size: .9em;
-    }
-    #gallery a:hover {
-        background-color: var(--midnight-blue);
-    }
-    footer a:hover {
-        color: var(--olive-green);
     }
 }
 
