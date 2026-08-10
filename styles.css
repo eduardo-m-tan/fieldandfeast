@@ -105,6 +105,7 @@ h3 {
 }
 #galleryImages p {
     padding: 0.5em 0;
+    margin: .25em;
 }
 #galleryImages img {
     border-radius: 5px 5px 0 0;
