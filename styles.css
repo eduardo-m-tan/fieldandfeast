@@ -25,9 +25,6 @@ a {
 
 /* GLOBAL STYLES (Mobile First Design) */
 body {
-    /* delete the next line when working on media queries */
-    max-width: 600px;
-
     font-family: 'Playfair Display';
     color: var(--midnight-blue);
     background-color: var(--soft-white);
@@ -59,7 +56,7 @@ nav {
     font-size: 1.6em;
 }
 nav a {
-    font-weight: bold;
+    font-weight: 900;
     color: var(--midnight-blue);
 }
 main {
@@ -84,7 +81,7 @@ h3 {
     padding: 1em;
     border-radius: 5px;
 }
-#offerings div, #gallery div {
+#offerings div, #galleryImages div {
     margin: 1em 0;
     box-shadow: 2px 2px 5px var(--dark-charcoal);
 }
@@ -94,16 +91,16 @@ h3 {
 #offerings p {
     margin-top: .2em;
 }
-#gallery div {
+#galleryImages div {
     display: block;
     text-align: center;
     font-style: italic;
     border-radius: 5px;
 }
-#gallery > div > p {
+#galleryImages p {
     padding: 0.5em 0;
 }
-#gallery > div > img {
+#galleryImages img {
     border-radius: 5px 5px 0 0;
     width: 100%;
 }
@@ -111,7 +108,6 @@ h3 {
     text-align: center;
     font-weight: bold;
 }
-
 footer a {
     color: var(--champagne-gold);
     font-weight: bold;
@@ -120,7 +116,27 @@ footer a {
 
 /* MEDIA QUERY (Medium) */
 @media screen and (min-width: 600px) {
-
+    main {
+        padding: 1.5em 2em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    #offerings, #galleryImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding-bottom: 1.5em;
+    }
+    #galleryImages {
+        font-size: .9em;
+    }
+    #offerings div, #galleryImages div {
+        margin: 0;
+    }
+    #offerings h2, #monthlyBasket {
+        grid-column: 1 / -1;
+    }
 }
 
 /* MEDIA QUERY (Large) */
