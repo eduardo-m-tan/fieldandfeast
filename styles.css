@@ -62,8 +62,8 @@ nav a {
 main {
     padding: 1.5em;
 }
-main section {
-    padding: 1em 0 1em;
+main > section {
+    padding: 1em 0;
     border-bottom: 3px solid var(--champagne-gold);
 }
 h2 {
@@ -73,6 +73,9 @@ h2 {
 }
 h3 {
     font-size: 1.8em;
+}
+#about p {
+    padding: .4em 0;
 }
 #offerings div, #gallery a {
     background-color: var(--olive-green);
@@ -90,6 +93,9 @@ h3 {
 }
 #offerings p {
     margin-top: .2em;
+}
+#galleryImages {
+    padding-top: 1em;
 }
 #galleryImages div {
     display: block;
@@ -119,6 +125,9 @@ footer a {
     main {
         padding: 1.5em 2em;
     }
+    nav a:hover {
+        color: var(--olive-green);
+    }
     h3 {
         font-size: 1.6em;
     }
@@ -128,23 +137,50 @@ footer a {
         gap: 1em;
         padding-bottom: 1.5em;
     }
-    #galleryImages {
-        font-size: .9em;
-    }
     #offerings div, #galleryImages div {
         margin: 0;
     }
     #offerings h2, #monthlyBasket {
         grid-column: 1 / -1;
     }
+    #galleryImages {
+        font-size: .9em;
+    }
+    #gallery a:hover {
+        background-color: var(--midnight-blue);
+    }
+    footer a:hover {
+        color: var(--olive-green);
+    }
 }
 
 /* MEDIA QUERY (Large) */
 @media screen and (min-width: 900px) {
-
+    main {
+        padding: 2em 3em;
+    }
+    header img {
+        width: 25%;
+    }
+    #offerings, #galleryImages {
+        gap: 1.5em;
+    }
+    #galleryImages {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: .8em;
+    }
 }
 
 /* MEDIA QUERY (XL) */
 @media screen and (min-width: 1200px) {
-
+    main {
+        padding: 2em 10em;
+    }
+    header img {
+        width: 20%;
+    }
+    #galleryImages {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-size: 1em;
+    }
 }
